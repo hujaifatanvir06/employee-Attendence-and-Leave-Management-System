@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Attendance & Leave Management</title><link rel="stylesheet" href="style.css">
+</head>
+<body><div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><div class="brand-icon">✓</div><div><b id="brandName">Team workspace</b><small>ATTENDANCE & LEAVE</small></div></div>
+  <p class="nav-label">WORKSPACE</p><nav id="nav">
+  <button class="nav-link active" data-page="dashboard">▦ <span>Dashboard</span></button>
+  <button class="nav-link" data-page="employees">♙ <span>Employees</span></button>
+  <button class="nav-link" data-page="attendance">▣ <span>Attendance</span></button>
+  <button class="nav-link" data-page="leave-requests">▤ <span>Leave requests</span><i id="pendingCount"></i></button>
+  <button class="nav-link" data-page="leave-status">◷ <span>Leave status</span></button>
+  <button class="nav-link" data-page="reports">▥ <span>Monthly reports</span></button>
+  <button class="nav-link" data-page="settings">⚙ <span>Settings</span></button></nav>
+  <div class="side-bottom"><div class="ready"><span></span><div><b>Workspace ready</b><small>Saved in this browser</small></div></div><div class="admin"><div class="avatar">AD</div><div><b>Administrator</b><small>Workspace owner</small></div></div></div>
+</aside>
+<main class="main"><header class="topbar"><button class="mobile-toggle" id="mobileToggle">☰</button><div class="crumb">Workspace <span>›</span> <b id="crumb">Dashboard</b></div><div class="top-actions"><time id="todayLabel"></time><button class="icon-btn" id="bell" title="Pending leave requests">♧</button><div class="avatar">AD</div></div></header>
+<section class="content" id="content"></section><footer><span>Attendance & leave management</span><span>Simple records for your team</span></footer></main></div>
+<div class="modal-backdrop" id="modal"><div class="modal"><div class="modal-head"><div><h2 id="modalTitle">Add</h2><p id="modalDesc"></p></div><button class="close" id="closeModal">×</button></div><form id="modalForm"></form></div></div>
+<div class="toast" id="toast"></div><script src="script.js"></script></body></html>
